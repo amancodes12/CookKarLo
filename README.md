@@ -76,3 +76,6 @@ Live demo: (You can open `index.html` locally or serve the folder with a static 
   - Click the heart button or “❤ Favorite” in the modal to add/remove a favorite.
   - Favorites persist in localStorage under the key `rf_favorites`.
   - Click "❤️ Favourites" in the topbar to go to the `favorites.html` page which lists saved recipes and lets you open them in the main page.
+
+## Live Link   
+   https://cookkarlo.netlify.app/
