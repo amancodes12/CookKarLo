@@ -92,7 +92,7 @@ body{
 .filter{display:flex;flex-direction:column;gap:6px;min-width:150px}
 .filter label{font-size:.8rem;color:var(--muted)}
 .filter select, .filter input{
-  padding:8px 10px;border-radius:8px;background:var(--glass-2);border:1px solid rgba(255,255,255,0.03);color:inherit;
+  padding:8px 10px;border-radius:8px;background:rgba(32,10,86,0.45);border:1px solid rgba(255,255,255,0.03);color:inherit;
 }
 
 /* Ingredient tags */
@@ -166,4 +166,5 @@ body{
 .empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);color:var(--muted)}
 .footer{padding:24px 20px;border-top:1px solid rgba(255,255,255,0.02);display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.9rem}
 .muted{color:var(--muted)}
+
 a{color:inherit;text-decoration:none}
