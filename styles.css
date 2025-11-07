@@ -169,3 +169,101 @@ body{
 
 a{color:inherit;text-decoration:none}
 
+/* 🌞 Light Theme — CookKarLo Edition */
+body.light {
+  background: linear-gradient(180deg, #f9fbfd 0%, #ffffff 100%);
+  color: #0b172a;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Topbar */
+body.light .topbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+}
+
+/* Buttons */
+body.light .btn {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #0b172a;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+body.light .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(75, 121, 255, 0.2);
+}
+body.light .btn.primary {
+  background: linear-gradient(90deg, #4b79ff, #8c4bff);
+  color: #ffffff;
+  border: none;
+}
+body.light .btn.ghost {
+  border: 1px dashed #e0e7ff;
+  color: #0b172a;
+}
+
+/* Cards */
+body.light .card {
+  background: linear-gradient(180deg, #ffffff 0%, #f2f5fa 100%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #0b172a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+body.light .card:hover {
+  box-shadow: 0 8px 20px rgba(75, 121, 255, 0.2);
+}
+body.light .meta-row,
+body.light .muted {
+  color: #6b7280;
+}
+
+/* Heart Icons */
+body.light .heart {
+  color: rgba(0, 0, 0, 0.35);
+}
+body.light .heart.active {
+  color: #e11;
+  text-shadow: none;
+}
+
+/* Inputs & Filters */
+body.light .filter label {
+  color: #6b7280;
+}
+body.light input,
+body.light select {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: #0b172a;
+}
+body.light input:focus {
+  box-shadow: 0 0 6px rgba(75, 121, 255, 0.3);
+}
+
+/* Modal */
+body.light .modal {
+  background: rgba(0, 0, 0, 0.3);
+}
+body.light .modal-card {
+  background: #ffffff;
+  color: #0b172a;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Toast */
+body.light .toast {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #0b172a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Empty State */
+body.light .empty-state {
+  background: #f2f5fa;
+  color: #6b7280;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
