@@ -273,3 +273,25 @@ el.modal.addEventListener('click', e => { if (e.target === el.modal) el.modal.cl
     openRecipeModal(pendingId);
   }
 })();
+
+/* -------------------------
+   🌗 Theme Toggle (Dark/Light)
+   ------------------------- */
+const themeToggle = document.getElementById('theme-toggle');
+if (themeToggle) {
+  const userTheme = localStorage.getItem('theme') || 'dark';
+
+  if (userTheme === 'light') {
+    document.body.classList.add('light');
+    themeToggle.textContent = '☀️';
+  } else {
+    themeToggle.textContent = '🌙';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    const isLight = document.body.classList.contains('light');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    themeToggle.textContent = isLight ? '☀️' : '🌙';
+  });
+}
